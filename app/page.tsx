@@ -18,7 +18,7 @@ function HomePage() {
     <Education/>
     <Skills/>
     <Projects/>
-    <Contact/>
+    {/* <Contact/> */}
     <Dock/>
     </div>
   )
