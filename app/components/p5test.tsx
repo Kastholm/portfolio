@@ -6,7 +6,7 @@ const sketch: Sketch = (p5) => {
   p5.setup = () => p5.createCanvas(400, 200, p5.WEBGL);
 
   p5.draw = () => {
-    p5.background(0);
+    p5.background("#17171700");
     p5.normalMaterial();
     p5.push();
     p5.rotateZ(p5.frameCount * 0.01);
