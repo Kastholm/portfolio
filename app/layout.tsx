@@ -15,34 +15,40 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Change this with your own data
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Made by Ayushmaan Singh",
-  authors: [{ name: "Ayushmaan Singh" }],
+  title: "Marc Kastholm - Portefølje",
+  description:
+    "Professionel portefølje af Marc Kastholm, der fremviser mine uddannelser, arbejde og projekter.",
+  authors: [{ name: "Marc Kastholm" }],
   openGraph: {
-    title: "Portfolio Template",
-    description: "Modern and professional template to showcase your best work.",
-    url: "https://www.serenity-ui.com/",
-    siteName: "Portfolio",
+    title: "Marc Kastholm - Portefølje",
+    description:
+      "Professionel portefølje af Marc Kastholm, hvor jeg fremviser mine uddannelser, arbejde og projekter.",
+    url: "https://www.marckastholm.com/",
+    siteName: "Portefølje",
     images: [
       {
-        url: "https://i.ibb.co/34j9BHf/portfoliotemplate.png",
-        width: 1200,
-        height: 630,
-        alt: "Portfolio Screenshot",
+        url: "https://i.ibb.co/pjWDNp4/portfoliopage.png",
+        width: 800,
+        height: 1000,
+        alt: "Skærmbillede af portefølje",
       },
     ],
-    locale: "en_US",
+    locale: "da_DK",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio Template",
-    description: "Modern and professional template to showcase your best work.",
-    images: ["https://i.ibb.co/34j9BHf/portfoliotemplate.png"],
+    title: "Marc Kastholm - Portefølje",
+    description:
+      "Professionel portefølje af Marc Kastholm, hvor jeg fremviser mine uddannelser, arbejde og projekter.",
+    images: ["https://i.ibb.co/pjWDNp4/portfoliopage.png"],
   },
+  keywords: ["portefølje", "Marc Kastholm", "projekter", "arbejde", "uddannelse"],
 };
+
+
 
 export default function RootLayout({
   children,
@@ -51,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased mx-auto mb-14 w-full max-w-screen-sm flex-1 px-5 pb-8 pt-20`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased mx-auto mb-14 w-full flex-1 px-5 pb-8 pt-20`}>
       <ThemeProvider attribute="class" defaultTheme="system">
         {children}
       </ThemeProvider>

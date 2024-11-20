@@ -97,9 +97,9 @@ function Intro() {
           ))}
         </div>
       </div>
-      <div className="absolute top-0 right-0 -z-10">
+      {/* <div className="absolute top-0 right-0 -z-10">
         <PTEST />
-      </div>
+      </div> */}
     </FadeBlurAnimation>
   );
 }

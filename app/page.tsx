@@ -11,7 +11,7 @@ import Contact from './components/contact';
 
 function HomePage() {
   return (
-    <div>
+    <div className='max-w-screen-sm'>
     <Intro/>
     <About/>
     <Experience/>

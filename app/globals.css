@@ -16,7 +16,10 @@ body {
   background: var(--background-light);
   font-family: var(--font-geist-sans);
   transition: background-color 0.2s ease, color 0.2s ease;
+  display: grid;
+  place-content: center;
 }
+
 
 
 html.dark body {
